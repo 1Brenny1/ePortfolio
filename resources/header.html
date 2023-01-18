@@ -1,13 +1,117 @@
+<style>
+    .U1_dd {
+        position: relative;
+        display: inline-block;
+    }
+
+    .U1_ddc {
+        transform: translate3d(0, -5px, 0);
+
+        display: none;
+        position: absolute;
+        background-color: #222222;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .U1_ddc a {
+        width: 100%;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .U1_dd:hover .U1_ddc {
+        display: block;
+    }
+
+    .U2_dd {
+        position: relative;
+        display: inline-block;
+    }
+
+    .U2_ddc {
+        transform: translate3d(3.8rem, -5px, 0);
+
+        display: none;
+        position: absolute;
+        background-color: #222222;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .U2_ddc a {
+        width: 100%;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .U2_dd:hover .U2_ddc {
+        display: block;
+    }
+
+    .U3_dd {
+        position: relative;
+        display: inline-block;
+    }
+
+    .U3_ddc {
+        transform: translate3d(7.6rem, -5px, 0);
+
+        display: none;
+        position: absolute;
+        background-color: #222222;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .U3_ddc a {
+        width: 100%;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .U3_dd:hover .U3_ddc {
+        display: block;
+    }
+</style>
+
 <header>
     <h1>ePortfolio</h1>
     <nav>
         <a href="../home">Home</a>
         /
-        <a href="../unit-1">Unit-1</a>
+        <div class="U1_dd" style="display: inline;">
+            <a href="../unit-1">Unit-1</a>
+            <div class="U1_ddc">
+                <h5 style="width: 100%; text-align: center;">Hardware</h5>
+                <a href="../unit-1/binary">Binary</a>
+            </div>
+        </div>
         /
-        <a href="../unit-2">Unit-2</a>
+        <div class="U2_dd" style="display: inline;">
+            <a href="../unit-2">Unit-2</a>
+            <div class="U2_ddc">
+                <h5 style="width: 100%; text-align: center;">Software</h5>
+                <a href="../unit-2/turing-games/">Turing Games</a>
+                <a href="../unit-2/bios-scavenger-hunt/">Scavenger Hunt</a>
+                <a href="../unit-2/malware-research/">Malware Research</a>
+                <a href="../unit-2/cybersecurity/">Cybersecurity</a>
+                <a href="../unit-2/arduino/">Arduino</a>
+            </div>
+        </div>
         /
-        <a href="#">Unit-3</a>
+        <div class="U3_dd" style="display: inline;">
+            <a href="../unit-3">Unit-3</a>
+            <div class="U3_ddc">
+                <h5 style="width: 100%; text-align: center;">Electronics</h5>
+                <a href="../unit-3/logic-gates/">Logic Gates</a>
+                <a href="../unit-3/ohms-law/">Ohm's Law</a>
+                <a href="../unit-3/electronic-research">Electronic Research</a>
+            </div>
+        </div>
         /
         <a href="#">Unit-4</a>
         /
